@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conversion de temps</title>
+    <link rel="shortcut icon" href="Img/logoCefim.jfif">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <!-- Liste des polices -->
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>CONVERSION DE TEMPS</h1>
+      <hr>
+      <h1>Convertissez des secondes en heures/minutes/secondes</h1>
+    </header>
+
+    <main>
+      <!-- Création de l'imput pour choisir le nombre de secondes-->
+      <div class="inputPosition">
+        <p>Entrez le nombre de secondes :&nbsp;&nbsp;</p>
+        <input id="seconde" type="number" min="0" required autofocus>
+      </div>
+      <!-- Création de l'imput pour convertir-->
+      <div class="inputPosition">
+        <input type="button" value="Convertir" onclick="Convertisseur()">
+      </div>
+      
+      <!-- Création du résultat de la conversion -->
+      <p class="résultat" id="résultat"></p>
+      </div>
+    </main>
+    
+    <!-- Création des fenêtres pop-up -->
+    <div id="Lightbox" class="Lightbox">
+      <p id="textLightBox"></p>
+      <span class="fermerFenêtre" id="fermerFenêtre" onclick="fermerLightbox()">&times;</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

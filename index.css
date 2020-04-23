@@ -1,0 +1,105 @@
+/* Style de la page */
+body{
+    overflow-x:hidden;
+}
+
+*{
+    margin:0px;
+}
+
+/* Style de la partie header */
+.header{
+    background-color:  rgba(134, 136, 6, 0.657);
+    font-family: 'Yeon Sung', sans-serif;
+    color:black;
+    font-size:20px;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+hr{
+    max-width: 200px;
+    color: rgba(179, 15, 97, 0.993);
+    margin-left: 570px;
+    }
+
+/* Style de la partie main */
+main{
+    font-family: 'Yeon Sung', sans-serif;
+    background-color:rgba(216, 218, 113, 0.829) ;
+    height:500px;
+    font-size: 20px;
+}
+
+.inputPosition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:40px;
+}
+
+.résultat{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:40px;
+}
+
+/* Style des inputs */
+input[type="number"]{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border-color:rgba(134, 136, 6, 0.657);
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="button"]{
+    margin-top: 10px;
+    width:130px;
+    height: 40px;
+    font-family: 'Yeon Sung', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color:  rgba(134, 136, 6, 0.657);
+    border-color: black;
+}
+
+/* Style de la lightbox */
+.Lightbox{
+    display: none;
+    position: fixed;
+    z-index: auto;
+    padding: 50px 50px;
+    left: 37%;
+    top: 40%;
+    width: 20%;
+    height: 5%;
+    background-color: rgb(156, 153, 153);
+    color: red;
+    font-size: 18px;
+    border:thick double #32a1ce;
+    border-color: rgb(83, 82, 82);
+}
+
+.fermerFenêtre {
+    display: none;
+    color: black;
+    position: absolute;
+    z-index: auto;
+    top: 0%;
+    right: 3%;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+.fermerFenêtre:hover,
+.fermerFenêtre:focus {
+color: rgb(73, 70, 70);
+cursor: pointer;
+}
